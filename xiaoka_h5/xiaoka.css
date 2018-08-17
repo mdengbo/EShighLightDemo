@@ -1,0 +1,147 @@
+
+/*小咖下载h5的css*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.header-background {
+    margin: 0 auto;
+    z-index: -1;
+    outline: none;
+    background: url(img/header_background.png) no-repeat center;
+    background-size:cover;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    height: 677px;
+}
+
+.header-logo {
+    width: 171px;
+    margin: 0 auto;
+}
+
+.header-logo img{
+    outline: none;
+    width: 100%;
+}
+
+
+.header-button {
+    margin: 0 auto;
+    border-radius: 35px;
+    color: white;
+    border: solid white ;
+    border-width: 4px;
+    width: 272px;
+    height: 70px;
+    margin-top: 42px;
+}
+
+/*立即下载*/
+.header-button span {
+    display: block;
+    margin: 0 auto;
+    width: 121px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+}
+
+.body-content {
+    z-index: 999;
+    margin: 0 auto;
+    background-color:#ffffff;
+    width: 92%;
+    position: relative;
+    padding-top: 42px;
+    border-radius: 8.5px;
+    margin-top: 43px;
+}
+
+.body-content .container {
+    width: 90%;
+    /*background-color: greenyellow;*/
+    margin: 0 auto;
+    margin-bottom: 46px;
+}
+
+.body-title {
+    width: 345px;
+    height: 31px;
+    margin: 0 auto;
+}
+
+.body-title span {
+    font-size: 27px;
+    color:#11ada2;
+}
+
+.body-title-img {
+    display: inline-block;
+}
+
+.body-title .body-title-img {
+    display: inline-block;
+}
+
+.container .body-introduce {
+    margin: 38px auto;
+    padding-bottom: 54px;
+}
+
+.container .body-introduce p {
+    font-size: 22px;
+}
+
+.watch-step {
+    z-index: 2;
+    margin: 0 auto;
+    background-color:#ffffff;
+    width: 92%;
+    position: relative;
+    padding-top: 42px;
+    border-radius: 8.5px;
+}
+
+.watch-title {
+    width: 315px;
+    height: 31px;
+    margin: 0 auto;
+}
+
+.watch-title span {
+    font-size: 27px;
+    color:#11ada2;
+}
+
+.watch-step .container {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 65px;
+}
+
+.container .watch-introduce {
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.watch-introduce img {
+    width: 100%;
+}
+
+
+

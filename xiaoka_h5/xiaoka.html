@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="author" content="" />
+    <meta name="renderer" content="webkit" />
+    <meta name="x5-orientation" content="portrait" />
+    <meta name='viewport'  content='target-densitydpi=device-dpi, width=640, user-scalable=0'/>
+    <meta name="APP le-mobile-web-APP -capable" content="yes"/>
+    <meta name="APP le-mobile-web-APP -status-bar-style" content="white"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta charset="UTF-8">
+    <!--<meta name="flexible" content="initial-dpr=2" />-->
+    <title>APP  h5 download</title>
+    <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+    <link rel="stylesheet" href="xiaoka.css" />
+</head>
+<body>
+<div class="header-background">
+</div>
+<div style="padding-top: 68px;">
+    <div class="header-logo">
+        <img src="img/logo.png">
+    </div>
+
+    <div class="header-button">
+        <span>立即下载</span>
+    </div>
+</div>
+
+
+<div class="body-content">
+    <div class="container">
+
+        <div class="body-title">
+            <div class="body-title-img" style="margin-right: 19px">
+                <img src="img/title_img.png" style="width: 35px; height: 21px">
+            </div>
+            <span>
+                    你是我的某某APP   
+                </span>
+            <div class="body-title-img" style="margin-left: 19px">
+                <img src="img/title_img.png" style="width: 35px; height: 21px">
+            </div>
+        </div>
+        <div class="body-introduce">
+            <p>
+                你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某APP 你是我的某某 
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="watch-step">
+    <div class="container">
+
+        <div class="watch-title">
+            <div class="body-title-img" style="margin-right: 19px">
+                <img src="img/title_img.png" style="width: 35px; height: 21px" />
+            </div>
+            <span>
+                    首页图片预览
+                </span>
+            <div class="body-title-img" style="margin-left: 19px">
+                <img src="img/title_img.png" style="width: 35px; height: 21px" />
+            </div>
+        </div>
+
+        <div class="watch-introduce">
+            <img src="img/watch_step.png" />
+        </div>
+    </div>
+</div>
+<div style="margin-top: 20px; height: 20px; "></div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.header-button').click(function() {
+
+            var isIDevicePhone = (/iphone|ipod/gi).test(navigator.platform);
+            var isIDeviceIpad = !isIDevicePhone && (/ipad/gi).test(navigator.platform);
+            var isIDevice = isIDevicePhone || isIDeviceIpad;
+            var isAndroid = !isIDevice && (/android/gi).test(navigator.userAgent);
+            var isandroid2_x = !isIDevice && (/android\s?2\./gi).test(navigator.userAgent);
+            var isIEMobile = !isIDevice && !isAndroid && (/MSIE/gi).test(navigator.userAgent);
+            var ua = navigator.userAgent.toLowerCase();
+            var isWeixin = ua.match(/micromessenger/gi);
+            var wxios = document.querySelector('.wxios');
+            var wxandroid = document.querySelector('.wxandroid');
+
+            /**添加下载地址的代码*/
+            var android_url = (!isandroid2_x) ? "wwww.marsdl.com" : "wwww.marsdl.com";
+            var ios_url = "wwww.marsdl.com";
+            if(isIDevice){
+                if (isWeixin) {
+                    //是否浏览器打开提示函数
+                    browser_open();
+                } else {
+                    //window.location = ios_url;
+					browser_open();
+                    if(isIDeviceIpad){
+                        return;
+                    }
+                }
+            }else if(isAndroid) {
+                if (isWeixin) {
+                    //是否浏览器打开提示函数
+                   browser_open();
+                } else {
+                    
+					browser_open();
+                    return;
+                }
+            } else {
+                browser_open();
+                return;
+            }
+        });
+
+        function browser_open() {
+            layer.open({
+                content: '<img src="img/browser_open.png" id="browser_img"/>'
+            });
+            $(".layui-m-layerchild").css("background-color", "inherit");
+			$(".layui-m-layer0 .layui-m-layerchild").css("width","65%");
+			
+            //$(".layui-m-layermain .layui-m-layersection").css("vertical-align", "top");
+
+
+            $(".layui-m-layer").click(function () {
+                //清除页面层
+                if($(".layui-m-layer").attr("id")) {
+                    $(".layui-m-layer").remove();
+                }
+            });
+        }
+    });
+
+
+
+</script>
