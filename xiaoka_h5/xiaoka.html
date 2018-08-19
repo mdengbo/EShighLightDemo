@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
     <meta name="Keywords" content="" />
     <meta name="Description" content="" />
     <meta name="author" content="" />
@@ -13,8 +12,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta charset="UTF-8">
     <!--<meta name="flexible" content="initial-dpr=2" />-->
-    <title>APP  h5 download</title>
-    <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+    <title>你是我的某某APP</title>
     <link rel="stylesheet" href="xiaoka.css" />
 </head>
 <body>
@@ -84,8 +82,8 @@
     $(function() {
         $('.header-button').click(function() {
 
-            var isIDevicePhone = (/iphone|ipod/gi).test(navigator.platform);
-            var isIDeviceIpad = !isIDevicePhone && (/ipad/gi).test(navigator.platform);
+            var isIDevicePhone = (/iphone|ipod/gi).test(navigator.userAgent);
+            var isIDeviceIpad = !isIDevicePhone && (/ipad/gi).test(navigator.userAgent);
             var isIDevice = isIDevicePhone || isIDeviceIpad;
             var isAndroid = !isIDevice && (/android/gi).test(navigator.userAgent);
             var isandroid2_x = !isIDevice && (/android\s?2\./gi).test(navigator.userAgent);
@@ -130,9 +128,6 @@
             });
             $(".layui-m-layerchild").css("background-color", "inherit");
 			$(".layui-m-layer0 .layui-m-layerchild").css("width","65%");
-			
-            //$(".layui-m-layermain .layui-m-layersection").css("vertical-align", "top");
-
 
             $(".layui-m-layer").click(function () {
                 //清除页面层
