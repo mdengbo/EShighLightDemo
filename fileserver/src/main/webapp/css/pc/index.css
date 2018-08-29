@@ -1,0 +1,24 @@
+.query {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+    background-color: #2aabd2;
+    height: 100px;
+}
+.inline-element {
+    vertical-align: -webkit-baseline-middle;
+    height: 64px;
+    font-size: 18px
+}
+#query-title {
+    width: 640px;
+}
+.layui-btn {
+    width: 150px;
+}
+
+.query-result {
+    width: 800px;
+    margin:0 auto;
+    background-color: #007DDB;
+}

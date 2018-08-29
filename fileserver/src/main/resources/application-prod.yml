@@ -1,0 +1,9 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: chenrui
+      cluster-nodes: localhost:9300
+      repositories:
+        #仓库中存储数据
+        enabled: true
+

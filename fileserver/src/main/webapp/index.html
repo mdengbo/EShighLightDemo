@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>搜索</title>
+    <link rel="icon" href="img/qingnin.png" type="image/gif" >
+    <link href="src/css/layui.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <style type="text/css">
+        * {margin: 0;padding: 0}
+        .inline-element{ display: inline-block;}
+    </style>
+	<script type="text/javascript">
+		var isIDevicePhone = (/iphone|ipod/gi).test(navigator.userAgent);
+		var isIDeviceIpad = !isIDevicePhone && (/ipad/gi).test(navigator.userAgent);
+		var isIDevice = isIDevicePhone || isIDeviceIpad;
+		var isAndroid = !isIDevice && (/android/gi).test(navigator.userAgent);
+		//动态加载css和js
+        var dynamicLoading = {
+            css: function(path){
+                if(!path || path.length === 0){
+                    throw new Error('argument "path" is required ! 加载css文件的路径出现错误!');
+                }
+                var head = document.getElementsByTagName('head')[0];
+                var link = document.createElement('link');
+                link.href = path;
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                head.appendChild(link);
+            },
+            js: function(path){
+                if(!path || path.length === 0){
+                    throw new Error('argument "path" is required !加载js文件的路径出现错误!');
+                }
+                var head = document.getElementsByTagName('head')[0];
+                var script = document.createElement('script');
+                script.src = path;
+                script.type = 'text/javascript';
+                head.appendChild(script);
+            }
+        };
+		if(isIDevice || isAndroid){
+            dynamicLoading.css("css/mobile/index.css");
+			/*dynamicLoading.js("test.js");*/
+		} else {
+			dynamicLoading.css("css/pc/index.css");
+			/*dynamicLoading.js("test.js");*/
+		}
+	</script>
+</head>
+<body>
+    <div id="container">
+
+        <div class="query" id="query">
+            <input type="text" name="title" v-model="name" id="query-title" placeholder="请您输入查询内容" class="layui-input inline-element">
+            <button class="layui-btn inline-element" v-on:click="queryList()">搜索</button>
+        </div>
+
+        <div class="query-result">
+            <div class="mlist" v-for="entity in list" >
+                <h3 class="mtitle">{{entity.name}}</h3>
+                <div>
+                    <p>{{entity.name}}</p>
+                </div>
+                <div class="mproperty">
+                    <span><t>日期</t> <b>{{entity.publishDate}}</b> </span>
+                    <span><t>歌手</t> <b>{{entity.director}}</b> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="src/layui.js"></script>
+<script type="text/javascript">
+    //后台数据交互和json数据渲染
+    var listVm = new Vue({
+        el:"#container",
+        data:{
+            name:"",
+            list:{}
+        },
+        methods: {
+            /**通过*/
+            queryList:function () {
+                $.getJSON("/files/search/"+this.name, function(result){
+                    listVm.list = result;
+                })
+            }
+        }
+    });
+</script>
+</body>
+</html>
+
+
+
