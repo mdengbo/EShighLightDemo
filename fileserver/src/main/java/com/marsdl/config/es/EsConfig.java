@@ -42,6 +42,9 @@ public class EsConfig {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        if( StringUtils.isEmpty(esClient) || StringUtils.isEmpty(esClient.admin())) {
+            esClient = client;
+        }
         return client;
     }
 

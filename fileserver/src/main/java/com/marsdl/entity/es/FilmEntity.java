@@ -23,8 +23,6 @@ public class FilmEntity {
     private String fileDuration;
     private String director;
 
-
-
     public String getName() {
         return name;
     }

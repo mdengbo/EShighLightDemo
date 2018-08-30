@@ -53,10 +53,10 @@ public class FileserverApplicationTests {
 	@Test
 	public void testSearch() {
 		String name = "少女";
-		List<FilmEntity> film = filmService.search(name);
+		/*List<FilmEntity> film = filmService.search(name);
 		for (FilmEntity entity : film) {
 			System.out.println(entity.getName());
-		}
+		}*/
 	}
 
 	@Test
@@ -161,10 +161,10 @@ public class FileserverApplicationTests {
 
 	@Test
 	public void testSearchEs() {
-		List<String> param = filmService.search("少女", "");
+		/*List<String> param = filmService.search("少女");
 		for(String str : param) {
 			System.out.println(str);
-		}
+		}*/
 	}
 
 }
