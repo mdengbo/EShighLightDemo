@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /mongofile
+  tomcat:
+    uri-encoding: UTF-8
+    accesslog:
+      enabled: true
+    basedir: logs
+ 
+logging:
+  config: classpath:log4j2-spring.xml
+
+spring:
+  data:
+    mongodb:
+      repositories:
+        type: auto
+  profiles:
+    active: @profileActive@
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration,org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+ 

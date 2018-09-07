@@ -1,0 +1,14 @@
+mongodb:
+  connect_timeout: 3000
+  socket_timeout: 3000
+  connections_per_host: 100
+  mongoClientOptions:
+    connect_timeout: 3000
+    socket_timeout: 3000
+    connections_per_host: 100
+  primary:
+     authentication-database: test
+     uri: mongodb://192.168.18.128:27017/test?authMechanism=SCRAM-SHA-1
+  secondary:
+     authentication-database: test
+     uri: mongodb://192.168.18.128:27017/test?authMechanism=SCRAM-SHA-1

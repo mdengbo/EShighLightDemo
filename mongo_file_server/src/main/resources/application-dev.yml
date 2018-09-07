@@ -1,0 +1,10 @@
+mongodb:
+  service:
+    host: 192.168.18.128
+    port: 27017
+    authenticationMechanism: SCRAM-SHA-1
+    credentials: service:service@test
+    connect_timeout: 3000
+    socket_timeout: 3000
+    connections_per_host: 100
+    dbname: test
