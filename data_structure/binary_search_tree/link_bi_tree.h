@@ -1,7 +1,3 @@
-//
-// Created by ecarx on 2018/8/17.
-//
-
 #ifndef C_CODE_SOURCE_LINK_BI_TREE_H
 #define C_CODE_SOURCE_LINK_BI_TREE_H
 
