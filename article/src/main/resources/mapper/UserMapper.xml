@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="code.mapper.UserMapper" >
+
+    <insert id="insert" parameterType="code.entity.User" >
+        insert into t_user (user_id, user_name, password,phone)
+        values (
+        #{userId,jdbcType=INTEGER},
+        #{userName,jdbcType=VARCHAR},
+        #{password,jdbcType=VARCHAR},
+        #{phone,jdbcType=VARCHAR}
+        )
+    </insert>
+
+</mapper>
+
