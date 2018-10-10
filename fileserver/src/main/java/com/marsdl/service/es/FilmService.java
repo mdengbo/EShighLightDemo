@@ -114,5 +114,15 @@ public class FilmService {
         return list;
     }
 
+    /**
+     * save
+     */
+    public void save() {
+        FilmEntity filmEntity = new FilmEntity();
+        filmEntity.setName("test, you are great bang，好好学习，天天上上");
+        filmEntity.setDirector("你才");
+        this.save(filmEntity);
+    }
+
 
 }

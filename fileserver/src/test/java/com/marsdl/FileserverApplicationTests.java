@@ -41,10 +41,6 @@ public class FileserverApplicationTests {
 	@Test
 	public void testFilmService() {
 		FilmEntity filmEntity = new FilmEntity();
-
-		for(int i=0; i < 100; i++) {
-
-		}
 		filmEntity.setName("test, you are great bang，好好学习，天天上上");
 		filmEntity.setDirector("你才");
 		filmService.save(filmEntity);
@@ -165,6 +161,8 @@ public class FileserverApplicationTests {
 		for(String str : param) {
 			System.out.println(str);
 		}*/
+
+
 	}
 
 }

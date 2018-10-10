@@ -20,11 +20,18 @@ public class FilmController {
     @Autowired
     private FilmService filmService;
 
-    @RequestMapping("/search/{query}")
+    @RequestMapping("/search/{name}")
     public Object search(@PathVariable String name) {
         if(StringUtils.isNotBlank(name)) {
             return filmService.search(name, "");
         }
         return null;
+    }
+
+    @RequestMapping("save")
+    public Object save() {
+
+        filmService.save();
+        return "处理成功";
     }
 }

@@ -6,7 +6,8 @@ server:
     accesslog:
       enabled: true
     basedir: logs
- 
+  port: 8080
+
 logging:
   config: classpath:log4j2-spring.xml
 
@@ -16,6 +17,3 @@ spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration,org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
 
-ecarx:
-  http:
-    deferrTimeout: 10000
