@@ -1,0 +1,695 @@
+2018-10-30 10:52:03.255  INFO 7700 --- [main] c.m.FileserverApplication                : Starting FileserverApplication on SKY-20180622OIV with PID 7700 (E:\zhongkehengyun\personal\LX\some_source_code\fileserver\target\classes started by Administrator in E:\zhongkehengyun\personal\LX\some_source_code)
+2018-10-30 10:52:03.276  INFO 7700 --- [main] c.m.FileserverApplication                : The following profiles are active: dev
+2018-10-30 10:52:03.332  INFO 7700 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37f21974: startup date [Tue Oct 30 10:52:03 CST 2018]; root of context hierarchy
+2018-10-30 10:52:03.751  INFO 7700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 10:52:03.873  INFO 7700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 10:52:03.886  INFO 7700 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.marsdl.dao.es.FilmDao.
+2018-10-30 10:52:04.140  INFO 7700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$dcdcb491] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 10:52:04.421  INFO 7700 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-10-30 10:52:04.445  INFO 7700 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-30 10:52:04.445  INFO 7700 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-30 10:52:04.450  INFO 7700 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;D:\develop\jdk\Java\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;D:\develop\erl9.3\bin;D:\develop\maven3.9\bin;D:\develop\Git\cmd;D:\develop\apache-tomcat-7.0.57\apache-tomcat-7.0.57\BIN;D:\develop\;D:\develop\nodejs\node_global;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-10-30 10:52:04.552  INFO 7700 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring embedded WebApplicationContext
+2018-10-30 10:52:04.552  INFO 7700 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1230 ms
+2018-10-30 10:52:04.682  INFO 7700 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-30 10:52:04.689  INFO 7700 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 10:52:04.690  INFO 7700 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 10:52:04.690  INFO 7700 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 10:52:04.690  INFO 7700 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 10:52:05.49  INFO 7700 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 10:52:05.52  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 10:52:05.52  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 10:52:05.52  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 10:52:05.53  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 10:52:05.53  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 10:52:05.53  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 10:52:05.866  INFO 7700 --- [main] i.n.u.i.PlatformDependent                : Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-10-30 10:52:12.586  INFO 7700 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 10:52:13.00  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37f21974: startup date [Tue Oct 30 10:52:03 CST 2018]; root of context hierarchy
+2018-10-30 10:52:13.243  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/save]}" onto public java.lang.Object com.marsdl.controller.FilmController.save()
+2018-10-30 10:52:13.245  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/search/{name}]}" onto public java.lang.Object com.marsdl.controller.FilmController.search(java.lang.String)
+2018-10-30 10:52:13.246  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.Object com.marsdl.controller.HotSongController.search(java.lang.String)
+2018-10-30 10:52:13.246  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{query}]}" onto public java.lang.Object com.marsdl.controller.HotSongController.searchQuery(java.lang.String)
+2018-10-30 10:52:13.248  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 10:52:13.248  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 10:52:13.274  INFO 7700 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 10:52:13.275  INFO 7700 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 10:52:13.942  INFO 7700 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 10:52:13.942  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 10:52:13.942  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 10:52:13.942  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 10:52:13.942  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 10:52:13.942  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 10:52:13.942  INFO 7700 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 10:52:13.973  INFO 7700 --- [main] o.s.d.e.c.TransportClientFactoryBean     : adding transport node : 192.168.1.84:9300
+2018-10-30 10:52:14.113  INFO 7700 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 10:52:14.356  INFO 7700 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/files'
+2018-10-30 10:52:14.359  INFO 7700 --- [main] c.m.FileserverApplication                : Started FileserverApplication in 11.619 seconds (JVM running for 13.991)
+2018-10-30 10:53:50.366  INFO 7700 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/files]                   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 10:53:50.366  INFO 7700 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 10:53:50.410  INFO 7700 --- [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-10-30 10:53:50.744 ERROR 7700 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/files] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: [multi_match] requires query value] with root cause
+
+java.lang.IllegalArgumentException: [multi_match] requires query value
+	at org.elasticsearch.index.query.MultiMatchQueryBuilder.<init>(MultiMatchQueryBuilder.java:187) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.index.query.QueryBuilders.multiMatchQuery(QueryBuilders.java:76) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at com.marsdl.service.es.FilmService.search(FilmService.java:76) ~[classes/:?]
+	at com.marsdl.controller.HotSongController.search(HotSongController.java:24) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+
+2018-10-30 10:55:00.670 ERROR 7700 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/files] threw exception [Request processing failed; nested exception is [my-application] IndexNotFoundException[no such index]] with root cause
+
+org.elasticsearch.index.IndexNotFoundException: no such index
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.indexNotFoundException(IndexNameExpressionResolver.java:678) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.innerResolve(IndexNameExpressionResolver.java:630) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.resolve(IndexNameExpressionResolver.java:586) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:164) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:139) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.executeSearch(TransportSearchAction.java:294) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.lambda$doExecute$4(TransportSearchAction.java:193) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:113) ~[?:?]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:86) ~[?:?]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:215) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:68) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:167) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:139) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:79) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:69) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:66) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport$RequestHandler.doRun(TcpTransport.java:1555) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:135) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport.handleRequest(TcpTransport.java:1512) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport.messageReceived(TcpTransport.java:1382) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.channelRead(Netty4MessageChannelHandler.java:64) ~[transport-netty4-client-5.6.9.jar:5.6.9]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:297) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:413) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+
+2018-10-30 10:55:25.826 ERROR 7700 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/files] threw exception [Request processing failed; nested exception is [my-application] IndexNotFoundException[no such index]] with root cause
+
+org.elasticsearch.index.IndexNotFoundException: no such index
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.indexNotFoundException(IndexNameExpressionResolver.java:678) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.innerResolve(IndexNameExpressionResolver.java:630) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.resolve(IndexNameExpressionResolver.java:586) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:164) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:139) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.executeSearch(TransportSearchAction.java:294) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.lambda$doExecute$4(TransportSearchAction.java:193) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:113) ~[?:?]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:86) ~[?:?]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:215) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:68) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:167) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:139) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:79) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:69) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:66) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport$RequestHandler.doRun(TcpTransport.java:1555) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:135) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport.handleRequest(TcpTransport.java:1512) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport.messageReceived(TcpTransport.java:1382) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.channelRead(Netty4MessageChannelHandler.java:64) ~[transport-netty4-client-5.6.9.jar:5.6.9]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:297) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:413) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+
+2018-10-30 11:03:18.443  INFO 7256 --- [main] c.m.FileserverApplication                : Starting FileserverApplication on SKY-20180622OIV with PID 7256 (E:\zhongkehengyun\personal\LX\some_source_code\fileserver\target\classes started by Administrator in E:\zhongkehengyun\personal\LX\some_source_code)
+2018-10-30 11:03:18.447  INFO 7256 --- [main] c.m.FileserverApplication                : The following profiles are active: dev
+2018-10-30 11:03:18.484  INFO 7256 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d465e4b: startup date [Tue Oct 30 11:03:18 CST 2018]; root of context hierarchy
+2018-10-30 11:03:18.843  INFO 7256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:03:18.985  INFO 7256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:03:19.06  INFO 7256 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.marsdl.dao.es.FilmDao.
+2018-10-30 11:03:19.258  INFO 7256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$9faefd43] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 11:03:19.529  INFO 7256 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-10-30 11:03:19.552  INFO 7256 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-30 11:03:19.552  INFO 7256 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-30 11:03:19.558  INFO 7256 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;D:\develop\jdk\Java\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;D:\develop\erl9.3\bin;D:\develop\maven3.9\bin;D:\develop\Git\cmd;D:\develop\apache-tomcat-7.0.57\apache-tomcat-7.0.57\BIN;D:\develop\;D:\develop\nodejs\node_global;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-10-30 11:03:19.647  INFO 7256 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring embedded WebApplicationContext
+2018-10-30 11:03:19.647  INFO 7256 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1166 ms
+2018-10-30 11:03:19.780  INFO 7256 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-30 11:03:19.784  INFO 7256 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 11:03:19.785  INFO 7256 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 11:03:19.785  INFO 7256 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 11:03:19.785  INFO 7256 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 11:03:20.186  INFO 7256 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:03:20.196  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:03:20.196  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:03:20.196  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:03:20.196  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:03:20.196  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:03:20.196  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:03:21.126  INFO 7256 --- [main] i.n.u.i.PlatformDependent                : Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-10-30 11:03:21.878  INFO 7256 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:03:22.131  INFO 7256 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d465e4b: startup date [Tue Oct 30 11:03:18 CST 2018]; root of context hierarchy
+2018-10-30 11:03:22.178  INFO 7256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/save]}" onto public java.lang.Object com.marsdl.controller.FilmController.save()
+2018-10-30 11:03:22.180  INFO 7256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/search/{name}]}" onto public java.lang.Object com.marsdl.controller.FilmController.search(java.lang.String)
+2018-10-30 11:03:22.180  INFO 7256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.Object com.marsdl.controller.HotSongController.search(java.lang.String)
+2018-10-30 11:03:22.181  INFO 7256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{query}]}" onto public java.lang.Object com.marsdl.controller.HotSongController.searchQuery(java.lang.String)
+2018-10-30 11:03:22.182  INFO 7256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 11:03:22.183  INFO 7256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 11:03:22.212  INFO 7256 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:03:22.212  INFO 7256 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:03:22.795  INFO 7256 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:03:22.795  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:03:22.795  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:03:22.795  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:03:22.795  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:03:22.795  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:03:22.795  INFO 7256 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:03:22.808  INFO 7256 --- [main] o.s.d.e.c.TransportClientFactoryBean     : adding transport node : 192.168.1.84:9300
+2018-10-30 11:03:22.928  INFO 7256 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 11:03:22.954  INFO 7256 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/files'
+2018-10-30 11:03:22.956  INFO 7256 --- [main] c.m.FileserverApplication                : Started FileserverApplication in 5.057 seconds (JVM running for 6.438)
+2018-10-30 11:03:55.727  INFO 7256 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:03:55.727  INFO 7256 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 11:03:55.743  INFO 7256 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-10-30 11:04:10.545 ERROR 7256 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/files] threw exception [Request processing failed; nested exception is [my-application] IndexNotFoundException[no such index]] with root cause
+
+org.elasticsearch.index.IndexNotFoundException: no such index
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.indexNotFoundException(IndexNameExpressionResolver.java:678) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.innerResolve(IndexNameExpressionResolver.java:630) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.resolve(IndexNameExpressionResolver.java:586) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:164) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:139) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.executeSearch(TransportSearchAction.java:294) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.lambda$doExecute$4(TransportSearchAction.java:193) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:60) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:113) ~[?:?]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:86) ~[?:?]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:215) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:68) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:167) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:139) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:79) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:69) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:66) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport$RequestHandler.doRun(TcpTransport.java:1555) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:135) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport.handleRequest(TcpTransport.java:1512) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.TcpTransport.messageReceived(TcpTransport.java:1382) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.channelRead(Netty4MessageChannelHandler.java:64) ~[transport-netty4-client-5.6.9.jar:5.6.9]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:297) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:413) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[netty-codec-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+
+2018-10-30 11:05:33.394  INFO 9972 --- [main] c.m.FileserverApplication                : Starting FileserverApplication on SKY-20180622OIV with PID 9972 (E:\zhongkehengyun\personal\LX\some_source_code\fileserver\target\classes started by Administrator in E:\zhongkehengyun\personal\LX\some_source_code)
+2018-10-30 11:05:33.399  INFO 9972 --- [main] c.m.FileserverApplication                : The following profiles are active: dev
+2018-10-30 11:05:33.433  INFO 9972 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c55f277: startup date [Tue Oct 30 11:05:33 CST 2018]; root of context hierarchy
+2018-10-30 11:05:33.729  INFO 9972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:05:33.856  INFO 9972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:05:33.869  INFO 9972 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.marsdl.dao.es.FilmDao.
+2018-10-30 11:05:34.108  INFO 9972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$dbc022de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 11:05:34.403  INFO 9972 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-10-30 11:05:34.421  INFO 9972 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-30 11:05:34.422  INFO 9972 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-30 11:05:34.426  INFO 9972 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;D:\develop\jdk\Java\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;D:\develop\erl9.3\bin;D:\develop\maven3.9\bin;D:\develop\Git\cmd;D:\develop\apache-tomcat-7.0.57\apache-tomcat-7.0.57\BIN;D:\develop\;D:\develop\nodejs\node_global;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-10-30 11:05:34.498  INFO 9972 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring embedded WebApplicationContext
+2018-10-30 11:05:34.498  INFO 9972 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1067 ms
+2018-10-30 11:05:34.609  INFO 9972 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-30 11:05:34.613  INFO 9972 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 11:05:34.613  INFO 9972 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 11:05:34.613  INFO 9972 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 11:05:34.613  INFO 9972 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 11:05:34.916  INFO 9972 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:05:34.917  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:05:34.918  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:05:34.918  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:05:34.918  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:05:34.918  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:05:34.918  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:05:35.572  INFO 9972 --- [main] i.n.u.i.PlatformDependent                : Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-10-30 11:05:36.296  INFO 9972 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:05:36.621  INFO 9972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c55f277: startup date [Tue Oct 30 11:05:33 CST 2018]; root of context hierarchy
+2018-10-30 11:05:36.671  INFO 9972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/save]}" onto public java.lang.Object com.marsdl.controller.FilmController.save()
+2018-10-30 11:05:36.673  INFO 9972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/search/{name}]}" onto public java.lang.Object com.marsdl.controller.FilmController.search(java.lang.String)
+2018-10-30 11:05:36.673  INFO 9972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.Object com.marsdl.controller.HotSongController.search(java.lang.String)
+2018-10-30 11:05:36.674  INFO 9972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{query}]}" onto public java.lang.Object com.marsdl.controller.HotSongController.searchQuery(java.lang.String)
+2018-10-30 11:05:36.675  INFO 9972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 11:05:36.676  INFO 9972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 11:05:36.702  INFO 9972 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:05:36.702  INFO 9972 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:05:36.955  INFO 9972 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:05:36.955  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:05:36.955  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:05:36.955  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:05:36.955  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:05:36.955  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:05:36.955  INFO 9972 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:05:36.967  INFO 9972 --- [main] o.s.d.e.c.TransportClientFactoryBean     : adding transport node : 192.168.1.84:9300
+2018-10-30 11:05:37.378  INFO 9972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 11:05:37.411  INFO 9972 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/files'
+2018-10-30 11:05:37.413  INFO 9972 --- [main] c.m.FileserverApplication                : Started FileserverApplication in 4.791 seconds (JVM running for 5.58)
+2018-10-30 11:05:49.294  INFO 9972 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:05:49.294  INFO 9972 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 11:05:49.310  INFO 9972 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-10-30 11:07:14.344  WARN 9972 --- [elasticsearch[_client_][transport_client_boss][T#4]] o.e.t.TransportService                   : Received response for a request that has timed out, sent [12363ms] ago, timed out [5ms] ago, action [cluster:monitor/nodes/liveness], node [{#transport#-1}{rz_tCa0VTTWsQZgbXnKEwg}{192.168.1.84}{192.168.1.84:9300}], id [32]
+2018-10-30 11:08:50.590  WARN 9972 --- [elasticsearch[_client_][transport_client_boss][T#6]] o.e.t.TransportService                   : Received response for a request that has timed out, sent [13967ms] ago, timed out [8ms] ago, action [cluster:monitor/nodes/liveness], node [{#transport#-1}{Py3_1Zy2TSK5HpZlDXYGCw}{192.168.1.84}{192.168.1.84:9300}], id [40]
+2018-10-30 11:12:16.624  INFO 9972 --- [elasticsearch[_client_][generic][T#3]] o.e.c.t.TransportClientNodesService      : failed to get node info for {#transport#-1}{rz_tCa0VTTWsQZgbXnKEwg}{192.168.1.84}{192.168.1.84:9300}, disconnecting...
+
+org.elasticsearch.transport.ReceiveTimeoutTransportException: [][192.168.1.84:9300][cluster:monitor/nodes/liveness] request_id [32] timed out after [12358ms]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:961) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:575) [elasticsearch-5.6.9.jar:5.6.9]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+
+2018-10-30 11:12:16.624  INFO 9972 --- [elasticsearch[_client_][generic][T#3]] o.e.c.t.TransportClientNodesService      : failed to get node info for {#transport#-1}{Py3_1Zy2TSK5HpZlDXYGCw}{192.168.1.84}{192.168.1.84:9300}, disconnecting...
+
+org.elasticsearch.transport.ReceiveTimeoutTransportException: [][192.168.1.84:9300][cluster:monitor/nodes/liveness] request_id [40] timed out after [13959ms]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:961) ~[elasticsearch-5.6.9.jar:5.6.9]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:575) [elasticsearch-5.6.9.jar:5.6.9]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+
+2018-10-30 11:13:32.447  INFO 5472 --- [main] c.m.FileserverApplication                : Starting FileserverApplication on SKY-20180622OIV with PID 5472 (E:\zhongkehengyun\personal\LX\some_source_code\fileserver\target\classes started by Administrator in E:\zhongkehengyun\personal\LX\some_source_code)
+2018-10-30 11:13:32.450  INFO 5472 --- [main] c.m.FileserverApplication                : The following profiles are active: dev
+2018-10-30 11:13:32.481  INFO 5472 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@25be7b63: startup date [Tue Oct 30 11:13:32 CST 2018]; root of context hierarchy
+2018-10-30 11:13:32.730  INFO 5472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:13:32.839  INFO 5472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:13:32.852  INFO 5472 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.marsdl.dao.es.FilmDao.
+2018-10-30 11:13:33.66  INFO 5472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$b1563ab6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 11:13:33.278  INFO 5472 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-10-30 11:13:33.292  INFO 5472 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-30 11:13:33.293  INFO 5472 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-30 11:13:33.297  INFO 5472 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;D:\develop\jdk\Java\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;D:\develop\erl9.3\bin;D:\develop\maven3.9\bin;D:\develop\Git\cmd;D:\develop\apache-tomcat-7.0.57\apache-tomcat-7.0.57\BIN;D:\develop\;D:\develop\nodejs\node_global;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-10-30 11:13:33.362  INFO 5472 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring embedded WebApplicationContext
+2018-10-30 11:13:33.362  INFO 5472 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 884 ms
+2018-10-30 11:13:33.449  INFO 5472 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-30 11:13:33.452  INFO 5472 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 11:13:33.452  INFO 5472 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 11:13:33.452  INFO 5472 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 11:13:33.452  INFO 5472 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 11:13:33.703  INFO 5472 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:13:33.705  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:13:33.705  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:13:33.705  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:13:33.705  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:13:33.705  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:13:33.706  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:13:34.199  INFO 5472 --- [main] i.n.u.i.PlatformDependent                : Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-10-30 11:13:34.816  INFO 5472 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:13:35.06  INFO 5472 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@25be7b63: startup date [Tue Oct 30 11:13:32 CST 2018]; root of context hierarchy
+2018-10-30 11:13:35.43  INFO 5472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/save]}" onto public java.lang.Object com.marsdl.controller.FilmController.save()
+2018-10-30 11:13:35.44  INFO 5472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/search/{name}]}" onto public java.lang.Object com.marsdl.controller.FilmController.search(java.lang.String)
+2018-10-30 11:13:35.45  INFO 5472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.Object com.marsdl.controller.HotSongController.search(java.lang.String)
+2018-10-30 11:13:35.45  INFO 5472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{query}]}" onto public java.lang.Object com.marsdl.controller.HotSongController.searchQuery(java.lang.String)
+2018-10-30 11:13:35.47  INFO 5472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 11:13:35.47  INFO 5472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 11:13:35.68  INFO 5472 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:13:35.68  INFO 5472 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:13:35.273  INFO 5472 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:13:35.274  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:13:35.274  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:13:35.274  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:13:35.274  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:13:35.274  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:13:35.274  INFO 5472 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:13:35.287  INFO 5472 --- [main] o.s.d.e.c.TransportClientFactoryBean     : adding transport node : 192.168.1.84:9300
+2018-10-30 11:13:35.384  INFO 5472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 11:13:35.406  INFO 5472 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/files'
+2018-10-30 11:13:35.408  INFO 5472 --- [main] c.m.FileserverApplication                : Started FileserverApplication in 3.473 seconds (JVM running for 4.187)
+2018-10-30 11:13:44.506  INFO 5472 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:13:44.506  INFO 5472 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 11:13:44.518  INFO 5472 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-10-30 11:18:26.634  INFO 9264 --- [main] c.m.FileserverApplication                : Starting FileserverApplication on SKY-20180622OIV with PID 9264 (E:\zhongkehengyun\personal\LX\some_source_code\fileserver\target\classes started by Administrator in E:\zhongkehengyun\personal\LX\some_source_code)
+2018-10-30 11:18:26.637  INFO 9264 --- [main] c.m.FileserverApplication                : The following profiles are active: dev
+2018-10-30 11:18:26.675  INFO 9264 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@72cc7e6f: startup date [Tue Oct 30 11:18:26 CST 2018]; root of context hierarchy
+2018-10-30 11:18:26.937  INFO 9264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:18:27.40  INFO 9264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:18:27.51  INFO 9264 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.marsdl.dao.es.FilmDao.
+2018-10-30 11:18:27.265  INFO 9264 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$ec4f6241] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 11:18:27.462  INFO 9264 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-10-30 11:18:27.478  INFO 9264 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-30 11:18:27.479  INFO 9264 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-30 11:18:27.482  INFO 9264 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;D:\develop\jdk\Java\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;D:\develop\erl9.3\bin;D:\develop\maven3.9\bin;D:\develop\Git\cmd;D:\develop\apache-tomcat-7.0.57\apache-tomcat-7.0.57\BIN;D:\develop\;D:\develop\nodejs\node_global;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-10-30 11:18:27.549  INFO 9264 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring embedded WebApplicationContext
+2018-10-30 11:18:27.549  INFO 9264 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 876 ms
+2018-10-30 11:18:27.637  INFO 9264 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-30 11:18:27.640  INFO 9264 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 11:18:27.640  INFO 9264 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 11:18:27.640  INFO 9264 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 11:18:27.640  INFO 9264 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 11:18:27.904  INFO 9264 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:18:27.906  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:18:27.906  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:18:27.907  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:18:27.907  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:18:27.907  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:18:27.907  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:18:28.394  INFO 9264 --- [main] i.n.u.i.PlatformDependent                : Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-10-30 11:18:29.12  INFO 9264 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:18:29.207  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@72cc7e6f: startup date [Tue Oct 30 11:18:26 CST 2018]; root of context hierarchy
+2018-10-30 11:18:29.248  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/save]}" onto public java.lang.Object com.marsdl.controller.FilmController.save()
+2018-10-30 11:18:29.250  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/search/{name}]}" onto public java.lang.Object com.marsdl.controller.FilmController.search(java.lang.String)
+2018-10-30 11:18:29.251  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.Object com.marsdl.controller.HotSongController.search(java.lang.String)
+2018-10-30 11:18:29.251  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{query}]}" onto public java.lang.Object com.marsdl.controller.HotSongController.searchQuery(java.lang.String)
+2018-10-30 11:18:29.252  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.marsdl.controller.HotSongController.getHtml()
+2018-10-30 11:18:29.253  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 11:18:29.254  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 11:18:29.275  INFO 9264 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:18:29.275  INFO 9264 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:18:29.683  INFO 9264 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:18:29.683  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:18:29.683  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:18:29.683  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:18:29.683  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:18:29.683  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:18:29.683  INFO 9264 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:18:29.696  INFO 9264 --- [main] o.s.d.e.c.TransportClientFactoryBean     : adding transport node : 192.168.1.84:9300
+2018-10-30 11:18:29.801  INFO 9264 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 11:18:29.822  INFO 9264 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/files'
+2018-10-30 11:18:29.825  INFO 9264 --- [main] c.m.FileserverApplication                : Started FileserverApplication in 4.184 seconds (JVM running for 4.796)
+2018-10-30 11:18:57.44  INFO 9264 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:18:57.44  INFO 9264 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 11:18:57.60  INFO 9264 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-10-30 11:19:33.695  INFO 8688 --- [main] c.m.FileserverApplication                : Starting FileserverApplication on SKY-20180622OIV with PID 8688 (E:\zhongkehengyun\personal\LX\some_source_code\fileserver\target\classes started by Administrator in E:\zhongkehengyun\personal\LX\some_source_code)
+2018-10-30 11:19:33.699  INFO 8688 --- [main] c.m.FileserverApplication                : The following profiles are active: dev
+2018-10-30 11:19:33.732  INFO 8688 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10c8f62: startup date [Tue Oct 30 11:19:33 CST 2018]; root of context hierarchy
+2018-10-30 11:19:34.34  INFO 8688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:19:34.154  INFO 8688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:19:34.166  INFO 8688 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.marsdl.dao.es.FilmDao.
+2018-10-30 11:19:34.411  INFO 8688 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$9faf0a5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 11:19:34.664  INFO 8688 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-10-30 11:19:34.682  INFO 8688 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-30 11:19:34.683  INFO 8688 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-30 11:19:34.687  INFO 8688 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;D:\develop\jdk\Java\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;D:\develop\erl9.3\bin;D:\develop\maven3.9\bin;D:\develop\Git\cmd;D:\develop\apache-tomcat-7.0.57\apache-tomcat-7.0.57\BIN;D:\develop\;D:\develop\nodejs\node_global;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-10-30 11:19:34.762  INFO 8688 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring embedded WebApplicationContext
+2018-10-30 11:19:34.762  INFO 8688 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1032 ms
+2018-10-30 11:19:34.874  INFO 8688 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-30 11:19:34.880  INFO 8688 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 11:19:34.880  INFO 8688 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 11:19:34.880  INFO 8688 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 11:19:34.880  INFO 8688 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 11:19:35.220  INFO 8688 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:19:35.221  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:19:35.222  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:19:35.222  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:19:35.222  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:19:35.222  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:19:35.222  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:19:35.848  INFO 8688 --- [main] i.n.u.i.PlatformDependent                : Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-10-30 11:19:36.523  INFO 8688 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:19:36.761  INFO 8688 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10c8f62: startup date [Tue Oct 30 11:19:33 CST 2018]; root of context hierarchy
+2018-10-30 11:19:36.808  INFO 8688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/save]}" onto public java.lang.Object com.marsdl.controller.FilmController.save()
+2018-10-30 11:19:36.810  INFO 8688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/search/{name}]}" onto public java.lang.Object com.marsdl.controller.FilmController.search(java.lang.String)
+2018-10-30 11:19:36.811  INFO 8688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.Object com.marsdl.controller.HotSongController.search(java.lang.String)
+2018-10-30 11:19:36.811  INFO 8688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{query}]}" onto public java.lang.Object com.marsdl.controller.HotSongController.searchQuery(java.lang.String)
+2018-10-30 11:19:36.811  INFO 8688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.marsdl.controller.HotSongController.getHtml()
+2018-10-30 11:19:36.813  INFO 8688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 11:19:36.813  INFO 8688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 11:19:36.839  INFO 8688 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:19:36.839  INFO 8688 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:19:37.128  INFO 8688 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:19:37.129  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:19:37.129  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:19:37.129  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:19:37.129  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:19:37.129  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:19:37.129  INFO 8688 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:19:37.141  INFO 8688 --- [main] o.s.d.e.c.TransportClientFactoryBean     : adding transport node : 192.168.1.84:9300
+2018-10-30 11:19:37.463  INFO 8688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 11:19:37.487  INFO 8688 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/files'
+2018-10-30 11:19:37.489  INFO 8688 --- [main] c.m.FileserverApplication                : Started FileserverApplication in 4.413 seconds (JVM running for 5.214)
+2018-10-30 11:19:44.19  INFO 8688 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:19:44.20  INFO 8688 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 11:19:44.48  INFO 8688 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-10-30 11:19:44.79 ERROR 8688 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/files] threw exception [Circular view path [index]: would dispatch back to the current handler URL [/files/index] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+
+javax.servlet.ServletException: Circular view path [index]: would dispatch back to the current handler URL [/files/index] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:209) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:147) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+
+2018-10-30 11:21:35.717  INFO 9044 --- [main] c.m.FileserverApplication                : Starting FileserverApplication on SKY-20180622OIV with PID 9044 (E:\zhongkehengyun\personal\LX\some_source_code\fileserver\target\classes started by Administrator in E:\zhongkehengyun\personal\LX\some_source_code)
+2018-10-30 11:21:35.722  INFO 9044 --- [main] c.m.FileserverApplication                : The following profiles are active: dev
+2018-10-30 11:21:35.758  INFO 9044 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61861a29: startup date [Tue Oct 30 11:21:35 CST 2018]; root of context hierarchy
+2018-10-30 11:21:36.92  INFO 9044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:21:36.213  INFO 9044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:21:36.227  INFO 9044 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.marsdl.dao.es.FilmDao.
+2018-10-30 11:21:36.486  INFO 9044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$b07bb6c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 11:21:36.733  INFO 9044 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-10-30 11:21:36.752  INFO 9044 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-30 11:21:36.752  INFO 9044 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-30 11:21:36.756  INFO 9044 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;D:\develop\jdk\Java\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;D:\develop\erl9.3\bin;D:\develop\maven3.9\bin;D:\develop\Git\cmd;D:\develop\apache-tomcat-7.0.57\apache-tomcat-7.0.57\BIN;D:\develop\;D:\develop\nodejs\node_global;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-10-30 11:21:36.832  INFO 9044 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring embedded WebApplicationContext
+2018-10-30 11:21:36.833  INFO 9044 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1079 ms
+2018-10-30 11:21:36.943  INFO 9044 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-30 11:21:36.948  INFO 9044 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 11:21:36.948  INFO 9044 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 11:21:36.948  INFO 9044 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 11:21:36.948  INFO 9044 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 11:21:37.261  INFO 9044 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:21:37.263  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:21:37.263  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:21:37.263  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:21:37.263  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:21:37.263  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:21:37.263  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:21:37.870  INFO 9044 --- [main] i.n.u.i.PlatformDependent                : Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-10-30 11:21:38.583  INFO 9044 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:21:38.821  INFO 9044 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61861a29: startup date [Tue Oct 30 11:21:35 CST 2018]; root of context hierarchy
+2018-10-30 11:21:38.875  INFO 9044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/save]}" onto public java.lang.Object com.marsdl.controller.FilmController.save()
+2018-10-30 11:21:38.877  INFO 9044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/search/{name}]}" onto public java.lang.Object com.marsdl.controller.FilmController.search(java.lang.String)
+2018-10-30 11:21:38.878  INFO 9044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.Object com.marsdl.controller.HotSongController.search(java.lang.String)
+2018-10-30 11:21:38.878  INFO 9044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{query}]}" onto public java.lang.Object com.marsdl.controller.HotSongController.searchQuery(java.lang.String)
+2018-10-30 11:21:38.879  INFO 9044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 11:21:38.880  INFO 9044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 11:21:38.906  INFO 9044 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:21:38.906  INFO 9044 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:21:39.165  INFO 9044 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:21:39.165  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:21:39.165  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:21:39.165  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:21:39.165  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:21:39.165  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:21:39.165  INFO 9044 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:21:39.178  INFO 9044 --- [main] o.s.d.e.c.TransportClientFactoryBean     : adding transport node : 192.168.1.84:9300
+2018-10-30 11:21:39.522  INFO 9044 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 11:21:39.550  INFO 9044 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/files'
+2018-10-30 11:21:39.553  INFO 9044 --- [main] c.m.FileserverApplication                : Started FileserverApplication in 4.512 seconds (JVM running for 5.371)
+2018-10-30 11:22:33.391  INFO 9044 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/files]                   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:22:33.391  INFO 9044 --- [http-nio-8080-exec-8] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 11:22:33.408  INFO 9044 --- [http-nio-8080-exec-8] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-10-30 11:25:34.933  INFO 6332 --- [main] c.m.FileserverApplication                : Starting FileserverApplication on SKY-20180622OIV with PID 6332 (E:\zhongkehengyun\personal\LX\some_source_code\fileserver\target\classes started by Administrator in E:\zhongkehengyun\personal\LX\some_source_code)
+2018-10-30 11:25:34.937  INFO 6332 --- [main] c.m.FileserverApplication                : The following profiles are active: dev
+2018-10-30 11:25:35.16  INFO 6332 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@770d0ea6: startup date [Tue Oct 30 11:25:35 CST 2018]; root of context hierarchy
+2018-10-30 11:25:35.373  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:25:35.526  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-30 11:25:35.542  INFO 6332 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.marsdl.dao.es.FilmDao.
+2018-10-30 11:25:35.807  INFO 6332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$2bb55ce7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-30 11:25:36.49  INFO 6332 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-10-30 11:25:36.66  INFO 6332 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-30 11:25:36.67  INFO 6332 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-30 11:25:36.72  INFO 6332 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\develop\jdk\Java\Java\jdk1.8.0_131\bin;D:\develop\jdk\Java\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;D:\develop\erl9.3\bin;D:\develop\maven3.9\bin;D:\develop\Git\cmd;D:\develop\apache-tomcat-7.0.57\apache-tomcat-7.0.57\BIN;D:\develop\;D:\develop\nodejs\node_global;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-10-30 11:25:36.147  INFO 6332 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring embedded WebApplicationContext
+2018-10-30 11:25:36.148  INFO 6332 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1135 ms
+2018-10-30 11:25:36.256  INFO 6332 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-30 11:25:36.260  INFO 6332 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 11:25:36.261  INFO 6332 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 11:25:36.261  INFO 6332 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 11:25:36.261  INFO 6332 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 11:25:36.567  INFO 6332 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:25:36.569  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:25:36.570  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:25:36.570  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:25:36.570  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:25:36.570  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:25:36.570  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:25:37.205  INFO 6332 --- [main] i.n.u.i.PlatformDependent                : Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-10-30 11:25:37.966  INFO 6332 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:25:38.216  INFO 6332 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@770d0ea6: startup date [Tue Oct 30 11:25:35 CST 2018]; root of context hierarchy
+2018-10-30 11:25:38.279  INFO 6332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/save]}" onto public java.lang.Object com.marsdl.controller.FilmController.save()
+2018-10-30 11:25:38.283  INFO 6332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/film/search/{name}]}" onto public java.lang.Object com.marsdl.controller.FilmController.search(java.lang.String)
+2018-10-30 11:25:38.284  INFO 6332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.Object com.marsdl.controller.HotSongController.search(java.lang.String)
+2018-10-30 11:25:38.285  INFO 6332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{query}]}" onto public java.lang.Object com.marsdl.controller.HotSongController.searchQuery(java.lang.String)
+2018-10-30 11:25:38.290  INFO 6332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 11:25:38.291  INFO 6332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 11:25:38.331  INFO 6332 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:25:38.332  INFO 6332 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 11:25:38.609  INFO 6332 --- [main] o.e.p.PluginsService                     : no modules loaded
+2018-10-30 11:25:38.609  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-10-30 11:25:38.609  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-10-30 11:25:38.609  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-10-30 11:25:38.609  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-10-30 11:25:38.609  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2018-10-30 11:25:38.609  INFO 6332 --- [main] o.e.p.PluginsService                     : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-10-30 11:25:38.827  INFO 6332 --- [main] o.s.d.e.c.TransportClientFactoryBean     : adding transport node : 192.168.1.84:9300
+2018-10-30 11:25:38.937  INFO 6332 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 11:25:38.962  INFO 6332 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/files'
+2018-10-30 11:25:38.964  INFO 6332 --- [main] c.m.FileserverApplication                : Started FileserverApplication in 4.572 seconds (JVM running for 5.287)
+2018-10-30 11:25:44.927  INFO 6332 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/files]                   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:25:44.927  INFO 6332 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 11:25:44.943  INFO 6332 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
