@@ -1,8 +1,6 @@
 package com.marsdl;
 
 import com.marsdl.config.es.EsConfig;
-import com.marsdl.dao.es.FilmDao;
-import com.marsdl.entity.es.FilmEntity;
 import com.marsdl.service.es.FilmService;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
@@ -23,7 +21,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.net.InetAddress;
-import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = FileserverApplication.class)

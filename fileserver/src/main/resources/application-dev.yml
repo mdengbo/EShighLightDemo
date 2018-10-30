@@ -1,8 +1,8 @@
 spring:
   data:
     elasticsearch:
-      cluster-name: chenrui
-      cluster-nodes: 127.0.0.1:9300
+      cluster-name: my-application
+      cluster-nodes: 192.168.1.84:9300
       repositories:
         #仓库中存储数据
         enabled: true

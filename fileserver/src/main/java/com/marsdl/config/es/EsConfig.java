@@ -35,10 +35,10 @@ public class EsConfig {
         TransportClient client = null;
         try {
             final Settings elasticsearchSettings = Settings.builder()
-                    .put("client.transport.sniff", true)
+                    //.put("client.transport.sniff", true)
                     .put("cluster.name", clusterName).build();
             client = new PreBuiltTransportClient(elasticsearchSettings);
-            client.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("127.0.0.1"), 9300));
+            client.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("192.168.1.84"), 9300));
         } catch (Exception e) {
             e.printStackTrace();
         }
